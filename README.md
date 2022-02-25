@@ -1,11 +1,7 @@
-# Portfolio
-This is a basic portfolio I put together using vanilla HTML, CSS, and Javascript.
+# Start PAge
+This is a basic start page I put together using vanilla HTML, CSS, and Javascript.
 
 ## Project Summary
-
-In this project, I want to build a full portfolio that meets my personal design preferences from scratch.
-
-By completing this project, I will demonstrate an ability to use HTML, CSS, and basic Javascript to create a functioning website.
 
 ### Skills I Used in this Project
 
@@ -14,4 +10,3 @@ By completing this project, I will demonstrate an ability to use HTML, CSS, and 
 ## Reflections on Completion
 
 {Add Reflections Here}
-# startpage
