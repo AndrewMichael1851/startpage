@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
+<meta name="author" content="Andrew Michael">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>~~~Andrew's Startpage~~~</title>
+
+<title>Startpage</title>
+
+<meta name="description" content="A basic startpage website I made for practice using a template I found on GitHub (see repository README).">
+<link rel="shortcut icon" type="image/png" href="img/andrew-favicon.png"/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/app.js"></script>
 
 <script>
   const CONFIG = {
@@ -121,25 +128,23 @@
     suggestionLimit: 4,
 
     /**
-     * Default search suggestions for the specified queries.
+     * My search suggestions for the specified queries.
      */
-    suggestionDefaults: {
-      0: ["0'8000", "0'8080"],
-      a: ['a/cognito/v2/idp/user-pools', 'a/dynamodbv2#item-explorer'],
-      c: ['c/calendar/u/1/r', 'c/calendar/u/2/r'],
-      d: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
-      e: ['e/brand/national-geographic', 'e/brand/marvel', 'e/brand/star-wars'],
-      g: ['g/trending', 'g/ossu', 'g/cadejscroggins/tilde', 'gist.github.com'],
-      j: ['j/popular', 'j/popular/lastweek', 'j/tags'],
-      k: ['k/u/1', 'k/u/2'],
-      m: ['m/mail/u/1', 'm/mail/u/2'],
-      o: ['o/discover/sets/new-for-you', 'o/discover/sets/weekly'],
-      p: ['p/beema.finance'],
-      r: ['r/r/startpages', 'r/r/unixporn', 'r/r/onebag', 'r/r/fujix'],
-      s: ['s/collection/tracks', 's/playlist/37i9dQZEVXcXr3r4FYT3J7'],
-      u: ['u/explore', 'u/backgrounds'],
-      y: ['y/feed/trending'],
-    },
+     suggestionDefaults: {
+       a: ['a/app/contacts', 'a/app/deals', 'a/app/automations'],
+       c: ['https://app.closte.com/', 'https://cloudvine.com'],
+       d: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
+       e: ['https://www.twitch.tv/teamgavel'],
+       f: ['f/tingenlaw'],
+       g: ['g/AndrewMichael1851?tab=repositories'],
+       i: ['https://employers.indeed.com/jobs'],
+       l: ['l/company/tingen-law'],
+       m: ['m/mail/u/1', 'm/mail/u/2'],
+       n: ['https://hr.tingen.law', 'https://crm.tingenwilliams.com'],
+       r: ['r/r/web_design', 'r/r/webdev'],
+       t: ['t/tingenlaw'],
+       '=': ['https://tagmanager.google.com/'],
+     },
 
     /**
      * The name, key, url, search path and color for your commands. If none of
@@ -161,9 +166,8 @@
       {
         hues: ['0', '0'],
         key: 'x',
-        name: 'Netflix',
-        search: '/search?q={}',
-        url: 'https://www.netflix.com/browse',
+        name: 'Freshbooks',
+        url: 'https://my.freshbooks.com/',
       },
       {
         hues: ['0', '350'],
@@ -182,14 +186,13 @@
       {
         hues: ['355', '335'],
         key: '=',
-        name: 'Wolfram',
-        search: '/input/?i={}',
-        url: 'https://www.wolframalpha.com',
+        name: 'Google Analytics',
+        url: 'https://analytics.google.com/analytics/web/',
       },
       {
         hues: ['349', '329'],
         key: '1',
-        name: 'OPL',
+        name: 'One Page Love',
         search: '/?s={}',
         url: 'https://onepagelove.com/inspiration',
       },
@@ -203,18 +206,18 @@
       {
         hues: ['266', '286'],
         key: 'f',
-        name: 'Figma',
-        url: 'https://www.figma.com/files/recent',
+        name: 'Facebook',
+        url: 'https://www.facebook.com',
       },
       {
         hues: ['230', '280'],
         key: 'i',
-        name: 'Instagram',
-        url: 'https://www.instagram.com',
+        name: 'Indeed',
+        url: 'https://www.indeed.com/',
       },
       {
         hues: ['264', '244'],
-        key: 'v',
+        key: 'e',
         name: 'Twitch',
         url: 'https://www.twitch.tv/directory/following',
       },
@@ -227,9 +230,10 @@
       },
       {
         hues: ['226', '236'],
-        key: 'e',
-        name: 'Disney',
-        url: 'https://www.disneyplus.com/home',
+        key: 'v',
+        name: 'Virginia Code',
+        search: '/search_cov/?query={}',
+        url: 'https://law.lis.virginia.gov',
       },
       {
         hues: ['217', '237'],
@@ -248,14 +252,14 @@
       {
         hues: ['243', '204'],
         key: 'p',
-        name: 'Plausible',
-        url: 'https://plausible.io',
+        name: 'Gravity Legal',
+        url: 'https://app.gravity-legal.com/payments/payment-links',
       },
       {
         hues: ['192', '232'],
         key: 'z',
-        name: 'Telegram',
-        url: 'https://web.telegram.org/z/',
+        name: 'Zapier',
+        url: 'https://zapier.com/app/zaps',
       },
       {
         hues: ['201', '221'],
@@ -287,10 +291,9 @@
       },
       {
         hues: ['166', '146'],
-        key: '+',
-        name: 'Khan',
-        search: '/search?page_search_query={}',
-        url: 'https://www.khanacademy.org',
+        key: '-',
+        name: 'Dropbox',
+        url: 'https://www.dropbox.com/home',
       },
       {
         hues: ['136', '156'],
@@ -309,9 +312,8 @@
       {
         hues: ['90'],
         key: 'j',
-        name: 'Hypem',
-        search: '/search/{}',
-        url: 'https://hypem.com/latest',
+        name: 'JustCall',
+        url: 'https://justcall.io/app/index',
       },
       {
         hues: ['45', '40'],
@@ -323,34 +325,31 @@
       {
         hues: ['36', '26'],
         key: 'a',
-        name: 'AWS',
-        url: 'https://us-west-2.console.aws.amazon.com/console/home',
+        name: 'ActiveCampaign',
+        url: 'https://tingenwilliams.activehosted.com',
       },
       {
         hues: ['32', '22'],
         key: 'o',
-        name: 'Sounds',
-        search: '/search?q={}',
-        url: 'https://soundcloud.com/discover',
+        name: 'Microsoft Office',
+        url: 'https://www.office.com/',
       },
       {
         hues: ['13', '33'],
         key: 'h',
-        name: 'Hunt',
-        search: '/search?q={}',
-        url: 'https://www.producthunt.com',
+        name: 'Quic Cloud',
+        url: 'https://my.quic.cloud/',
       },
       {
         hues: ['4', '24'],
         key: 'n',
-        name: 'Notion',
-        url: 'https://www.notion.so',
+        name: 'Tingen Law',
+        url: 'https://tingen.law',
       },
       {
         key: 'u',
-        name: 'Unsplash',
-        search: '/search/{}',
-        url: 'https://unsplash.com/images',
+        name: 'USCIS',
+        url: 'https://uscis.gov',
       },
       {
         key: '0',
@@ -376,314 +375,6 @@
     }),
   };
 </script>
-
-<style>
-  /* themes */
-
-  .ashes-dark {
-    --base-background: #1c2023;
-    --base-foreground: #c7ccd1;
-    --command-color-complementary: var(--base-background);
-    --command-color-highlight-foreground: var(--base-foreground);
-    --command-color-lightness: 68%;
-    --command-color-saturation: 25%;
-    --help-command-background: #272e32;
-  }
-
-  .gruvbox-dark {
-    --base-background: #282828;
-    --base-foreground: #ebdbb2;
-    --command-color-complementary: #fbf1c7;
-    --command-color-highlight-foreground: var(--base-background);
-    --command-color-lightness: 45%;
-    --command-color-saturation: 34%;
-    --help-command-background: #3c3836;
-  }
-
-  .lovelace-dark {
-    --base-background: #1d1f28;
-    --base-foreground: #fdfdfd;
-    --command-color-complementary: var(--base-foreground);
-    --command-color-highlight-foreground: var(--base-background);
-    --command-color-lightness: 53%;
-    --command-color-saturation: 57%;
-    --help-command-background: #282a36;
-  }
-
-  .nord-dark {
-    --base-background: #2e3440;
-    --base-foreground: #d8dee9;
-    --command-color-complementary: #fff;
-    --command-color-highlight-foreground: var(--help-command-background);
-    --command-color-lightness: 56%;
-    --command-color-saturation: 42%;
-    --help-command-background: #3b4252;
-  }
-
-  .ocean-light {
-    --base-background: #eff1f5;
-    --base-foreground: #4f5b66;
-    --command-color-complementary: var(--base-background);
-    --command-color-highlight-foreground: var(--base-foreground);
-    --command-color-lightness: 56%;
-    --command-color-saturation: 32%;
-    --help-command-background: #e4e6ea;
-  }
-
-  .tilde-dark {
-    --base-background: #111;
-    --base-foreground: #ddd;
-    --command-color-complementary: #eee;
-    --command-color-highlight-foreground: var(--base-background);
-    --command-color-lightness: 50%;
-    --command-color-saturation: 40%;
-    --help-command-background: #222;
-  }
-
-  /* root variables */
-
-  :root {
-    --base-border-radius: 2px;
-    --base-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-      Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
-    --base-font-size: 17px;
-    --base-font-weight-black: 900;
-    --base-font-weight-bold: 700;
-    --base-font-weight-normal: 400;
-    --clock-font-size: 3rem;
-    --command-height: 4rem;
-    --command-padding: calc(var(--command-height) / 2 - 1ch / 2);
-    --help-grid-columns: 1;
-    --help-grid-gap: 1rem;
-    --search-input-font-size: 2rem;
-    --search-input-text-align: left;
-    --suggestion-height: 3rem;
-    --suggestion-padding: calc(var(--suggestion-height) / 2 - 1ch / 2);
-    --suggestions-flex-direction: column;
-  }
-
-  @media (min-width: 600px) {
-    :root {
-      --clock-font-size: 5rem;
-      --help-grid-columns: 2;
-    }
-  }
-
-  @media (min-width: 900px) {
-    :root {
-      --clock-font-size: 7rem;
-      --help-grid-columns: 3;
-      --search-input-font-size: 3rem;
-      --suggestions-flex-direction: row;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    :root {
-      --help-grid-columns: 5;
-    }
-  }
-
-  /* reset */
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: var(--base-font-family);
-    font-size: var(--base-font-size);
-    font-weight: var(--base-font-weight-normal);
-  }
-
-  body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: var(--base-background);
-    color: var(--base-foreground);
-  }
-
-  input,
-  button {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    color: inherit;
-    font-family: var(--base-font-family);
-    font-weight: var(--base-font-weight-normal);
-    font-size: 1rem;
-  }
-
-  input,
-  button,
-  input:focus,
-  button:focus {
-    border: 0;
-    outline: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  a,
-  a:focus {
-    color: inherit;
-    outline: 0;
-  }
-
-  /* reusable classes */
-
-  .center {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-
-  .center > * {
-    margin: auto;
-  }
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-  }
-
-  /* main styles */
-
-  .clock {
-    display: block;
-    font-size: var(--clock-font-size);
-    cursor: pointer;
-  }
-
-  .help {
-    background: var(--base-background);
-    visibility: hidden;
-    z-index: 1;
-  }
-
-  body.help .help {
-    visibility: visible;
-  }
-
-  body.form .help {
-    visibility: hidden;
-  }
-
-  .command-list {
-    display: grid;
-    grid-gap: var(--help-grid-gap);
-    grid-template-columns: repeat(var(--help-grid-columns), 1fr);
-    padding: 6rem 0;
-  }
-
-  .command {
-    display: flex;
-    background: var(--help-command-background);
-    border-radius: var(--base-border-radius);
-    opacity: 0.9;
-    line-height: var(--command-height);
-    text-decoration: none;
-  }
-
-  .command:hover {
-    opacity: 1;
-  }
-
-  .command:hover .command-key {
-    background: transparent;
-  }
-
-  .command-key {
-    width: var(--command-height);
-    border-radius: var(--base-border-radius);
-    color: var(--command-color-complementary);
-    font-weight: var(--base-font-weight-bold);
-    text-align: center;
-  }
-
-  .command-name {
-    padding: 0 var(--command-padding);
-  }
-
-  .search-form {
-    background: var(--base-background);
-    visibility: hidden;
-  }
-
-  body.form .search-form {
-    visibility: visible;
-  }
-
-  body.color .search-form {
-    color: var(--command-color-complementary);
-  }
-
-  .search-form-content {
-    width: 100%;
-  }
-
-  .search-input {
-    width: 100%;
-    font-size: var(--search-input-font-size);
-    font-weight: var(--base-font-weight-black);
-    text-align: center;
-  }
-
-  .search-suggestions {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: var(--suggestions-flex-direction);
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    overflow: hidden;
-  }
-
-  body.suggestions .search-suggestions {
-    display: flex;
-  }
-
-  .search-suggestion {
-    border-radius: var(--base-border-radius);
-    cursor: pointer;
-    font-weight: var(--base-font-weight-bold);
-    height: var(--suggestion-height);
-    padding: 0 var(--suggestion-padding);
-    white-space: nowrap;
-  }
-
-  .search-suggestion.highlight {
-    background: var(--base-foreground);
-    color: var(--base-background);
-  }
-
-  body.color .search-suggestion.highlight {
-    background: var(--command-color-complementary);
-    color: var(--command-color-highlight-foreground);
-  }
-
-  .search-suggestion-match {
-    font-weight: var(--base-font-weight-normal);
-  }
-</style>
 
 <div class="center">
   <time class="clock" id="clock" />
