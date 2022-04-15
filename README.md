@@ -1,4 +1,4 @@
-# Start PAge
+# Start Page
 This is a basic start page I put together using vanilla HTML, CSS, and Javascript.
 
 ## Project Summary
@@ -13,3 +13,6 @@ This is a basic start page I put together using vanilla HTML, CSS, and Javascrip
 
 ## Source
 https://github.com/cadejscroggins/tilde
+
+## View Project
+https://andrewmichael1851.github.io/startpage/
